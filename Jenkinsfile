@@ -6,6 +6,7 @@ pipeline {
     ORG = 'kinmen'
     APP_NAME = 'jenkinsx-test-python-app'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
+    TILLER_NAMESPACE = 'kube-system'
   }
   stages {
     stage('CI Build and push snapshot') {
